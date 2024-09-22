@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e1d5ee;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.card {
+    margin-top: 20px; /* Espaciado encima de la carta */
+    padding: 10px; /* Ajusta el padding si es necesario */
+    background-color: #fff; /* Color de fondo de la carta */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    text-align: center; /* Centrar el contenido */
+    display: inline-block; /* Permite que la carta ajuste su tamaño al contenido */
+}
+
+.card-image {
+    max-width: 280%; /* Ajusta este valor según sea necesario */
+    height: 350px; /* Mantener la relación de aspecto */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+
+
+
+h1 {
+    color: #ff66b2;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #0278ff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #ff07ea;
+}
+
+.gift-button {
+    display: inline-flex; /* Para alinear el ícono y el texto */
+    align-items: center; /* Centrar verticalmente el contenido */
+    background-color: #bf7eeb;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    color: #fff; /* Color del texto */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+.gift-button:hover {
+    background-color: #b405fa; /* Color al pasar el ratón */
+}
+
+.gift-button span {
+    margin-left: 10px; /* Espaciado entre el ícono y el texto */
+}
+
+
+/* Estilo para el contenedor de la imagen */
+#sunflowerContainer {
+    display: flex; /* Cambia a flex para asegurarte de que sea visible */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+#sunflowerImage {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+
+/* Estilo para mostrar la imagen en pantalla completa */
+.fullscreen {
+    display: none;
+}
+
+.fullscreen.active {
+    display: flex;
+}

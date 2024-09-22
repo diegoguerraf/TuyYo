@@ -45,11 +45,34 @@
             margin-top: 20px;
             display: block; /* Asegurarse de que el reproductor esté en una nueva línea */
         }
+         /* Media Query para móviles */
+         @media (max-width: 768px) {
+            .content {
+                flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+                align-items: center; /* Centrar las cartas */
+            }
+
+            .card {
+                width: 100%; /* Hacer que las cartas ocupen el ancho completo */
+                max-width: 450px; /* Limitar el ancho máximo */
+            }
+
+            .card-image {
+                margin-right: 0; /* Eliminar margen a la derecha */
+                margin-bottom: 20px; /* Añadir espacio debajo de la carta de la imagen */
+            }
+        }
+
+        /* Estilo para el audio (opcional) */
+        audio {
+            margin-top: 20px;
+            display: block; /* Asegurarse de que el reproductor esté en una nueva línea */
+        }
     </style>
 </head>
 <body>
     <div class="content">
-        <div class="card card-image">
+        <div>
             <img src="assets/img/girasoles2.jpg" id="sunflowerImage" alt="Paisaje de girasoles">
         </div>
 
